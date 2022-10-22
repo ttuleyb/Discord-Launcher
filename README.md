@@ -1,11 +1,11 @@
 # Discord Launcher
 A simple launcher for Discord, written in Python.
 
-## Features
+## Features
 Automatically re-injects [Better Discord](https://github.com/BetterDiscord/BetterDiscord) when Discord updates.
 Automatically applies [OpenASAR](https://github.com/GooseMod/OpenAsar) patch when Discord updates.
 
-## Pre-requisites
+## Pre-requisites
 - [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org/en/) with [pnpm](https://pnpm.io/).
 - [Python 3](https://www.python.org/downloads/)
@@ -20,4 +20,3 @@ No the script only re-injects if an update is detected.
 
 ### How do I install for other operating systems?
 As of right now, the script is written for MacOS. However it should be as easy as changing the directory locations in the script to match your operating system. Please create a pull request if you do this and I'll happily merge it.
-
