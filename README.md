@@ -10,7 +10,7 @@ Automatically applies [OpenASAR](https://github.com/GooseMod/OpenAsar) patch whe
 - [Node.js](https://nodejs.org/en/) with [pnpm](https://pnpm.io/).
 - [Python 3](https://www.python.org/downloads/)
 
-## Installation
+## Installation
 1. Launch discord manually for the first time if you haven't
 2. Run launch.py
 3. Optionally create a shortcut to launch.py that you run every time you want to launch Discord to make injection automatic
