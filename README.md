@@ -20,3 +20,10 @@ No the script only re-injects if an update is detected.
 
 ### How do I install for other operating systems?
 As of right now, the script is written for MacOS. However it should be as easy as changing the directory locations in the script to match your operating system. Please create a pull request if you do this and I'll happily merge it.
+
+### What about the Discord TOS?
+Both BetterDiscord and OpenASAR are modifications and technically break the TOS. Use them your own risk.
+
+### Credits
+- [BetterDiscord](https://github.com/BetterDiscord/BetterDiscord)
+- [OpenASAR](https://github.com/GooseMod/OpenAsar)
