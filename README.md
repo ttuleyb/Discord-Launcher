@@ -17,3 +17,6 @@ Automatically applies [OpenASAR](https://github.com/GooseMod/OpenAsar) patch whe
 
 ### Does the script re-inject every time I launch Discord?
 No the script only re-injects if an update is detected.
+
+### How do I install for other operating systems?
+As of right now, the script is written for MacOS. However it should be as easy as changing the directory locations in the script to match your operating system. Please create a pull request if you do this and I'll happily merge it.
