@@ -24,6 +24,6 @@ As of right now, the script is written for MacOS. However it should be as easy a
 ### What about the Discord TOS?
 Both BetterDiscord and OpenASAR are modifications and technically break the TOS. Use them your own risk.
 
-### Credits
+### Credits
 - [BetterDiscord](https://github.com/BetterDiscord/BetterDiscord)
 - [OpenASAR](https://github.com/GooseMod/OpenAsar)
