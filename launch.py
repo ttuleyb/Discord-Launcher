@@ -1,6 +1,7 @@
 import os
 import time
 import requests
+import subprocess
 
 if not os.path.exists("old_build_info.json"):
     oldBuildInfo = None #No  build info
@@ -47,8 +48,14 @@ if oldBuildInfo != buildInfo:
     os.system("open /Applications/Discord.app")
 
 else:
-    #Kill Discord
-    os.system("killall Discord")
-    time.sleep(5)
+    #Check if discord is open
+    process = subprocess.Popen('pgrep Discord', shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    my_pid, err = process.communicate() #Get PID of Discord
+
+    processExists = my_pid != b''
+    if processExists:
+        #Kill Discord
+        os.system("killall Discord")
+        time.sleep(5)
     #Launch discord
     os.system("open /Applications/Discord.app")
