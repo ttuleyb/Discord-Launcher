@@ -1,4 +1,5 @@
 import os
+import time
 import requests
 
 if not os.path.exists("old_build_info.json"):
@@ -13,6 +14,9 @@ with open("/Applications/Discord.app/Contents/Resources/build_info.json") as f:
 if oldBuildInfo != buildInfo:
     print("Hold on, Reinjecting BD after Discord update...")
 
+    #Kill Discord
+    os.system("killall Discord")
+
     #Clone or update BetterDiscord
     if os.path.exists("BetterDiscord"):
         #Update it
@@ -20,9 +24,6 @@ if oldBuildInfo != buildInfo:
     else:
         #Clone it
         os.system("git clone https://github.com/BetterDiscord/BetterDiscord")
-
-    #Kill Discord
-    os.system("killall Discord")
 
     commandsToExecute = ["cd BetterDiscord && ",
                          "pnpm recursive install && ", #Install dependencies
@@ -46,5 +47,8 @@ if oldBuildInfo != buildInfo:
     os.system("open /Applications/Discord.app")
 
 else:
-    #Just Launch discord
+    #Kill Discord
+    os.system("killall Discord")
+    time.sleep(5)
+    #Launch discord
     os.system("open /Applications/Discord.app")
