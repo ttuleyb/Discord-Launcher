@@ -55,7 +55,8 @@ else:
     processExists = my_pid != b''
     if processExists:
         #Kill Discord
-        os.system("killall Discord")
-        time.sleep(5)
+        pid = str(my_pid.decode("utf-8")) #Convert bytes to string
+        os.system("kill -9 " + pid)
+        time.sleep(0.1)
     #Launch discord
     os.system("open /Applications/Discord.app")
